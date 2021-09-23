@@ -12,4 +12,5 @@ public class TipoData {
 
     private long id;
     private String descricao;
+    private  int valor;
 }

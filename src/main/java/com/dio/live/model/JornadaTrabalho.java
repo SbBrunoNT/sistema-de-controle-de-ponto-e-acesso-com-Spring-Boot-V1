@@ -10,7 +10,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class jornadaTrabalho {
+public class JornadaTrabalho {
 
     private long id;
     private String descricao;

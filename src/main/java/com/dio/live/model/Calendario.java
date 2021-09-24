@@ -8,9 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class TipoData {
-
-    private long id;
-    private String descricao;
-
+public class Calendario {
+    // teste
 }

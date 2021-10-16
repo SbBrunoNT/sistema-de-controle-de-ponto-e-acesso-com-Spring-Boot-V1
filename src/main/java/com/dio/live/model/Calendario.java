@@ -1,7 +1,10 @@
 package com.dio.live.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
 @Getter
@@ -10,7 +13,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
+@Audited
 public class Calendario {
+
+    @Id
     private Long id;
     private TipoData tipoData;
     private String descricao;

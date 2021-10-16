@@ -38,7 +38,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.20'
 	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
-	testImplementation group: 'com.h2database', name: 'h2', version: '1.4.200'
+	// https://mvnrepository.com/artifact/com.h2database/h2
+	testImplementation group: 'com.h2database', name: 'h2', version: '1.4.199'
+	implementation 'com.h2database:h2'
+
 
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
@@ -59,7 +62,3 @@ test {
 	useJUnitPlatform()
 }
 
-asciidoctor {
-	inputs.dir snippetsDir
-	dependsOn test
-}
